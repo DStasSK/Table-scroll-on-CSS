@@ -2,7 +2,7 @@
 
 This article discusses a way to create fixed table headers using only **CSS**.
 
-You can look at this article [here](https://dstassk.github.io/Table-scroll-on-CSS/table-scroll.html).
+You can look at this article [here](https://dstassk.github.io/Table-scroll-on-CSS/).
 
 ---
 
@@ -10,7 +10,7 @@ You can look at this article [here](https://dstassk.github.io/Table-scroll-on-CS
 
 <br>
 
-Представляю вашему вниманию [статью](https://dstassk.github.io/Table-scroll-on-CSS/table-scroll.html), в которой я расскажу вам о возможности стилизации таблицы у которой:
+Представляю вашему вниманию [статью](https://dstassk.github.io/Table-scroll-on-CSS/), в которой я расскажу вам о возможности стилизации таблицы у которой:
 
 
 
