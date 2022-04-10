@@ -17,11 +17,26 @@
 </head>
 
 <body>
-<main id="home">
+<main id="home" class="main">
 
 	<!-- translate --><!-- yes it's checkins :-)-->
-	<input type="radio" id="lang_ru" name="translate" checked><label for="lang_ru" title="ru"></label>
-	<input type="radio" id="lang_en" name="translate"><label for="lang_en" title="en"></label>
+	<input type="radio" id="lang_ru" name="translate" checked class="main__flag main__flag_ru">
+	<label for="lang_ru" title="ru" class="main__flag__label main__flag__label_ru"></label>
+	<input type="radio" id="lang_en" name="translate" class="main__flag main__flag_en">
+	<label for="lang_en" title="en" class="main__flag__label main__flag__label_en"></label>
+
+
+
+	<nav class="main__nav">
+		<a href="#home">Home</a>
+		<a href="#m10" title="lite header 0">v.1.0.</a>
+		<a href="#m11" title="lite header 1">v.1.1.</a>
+		<a href="#m12" title="lite header 2">v.1.2.</a>
+		<a href="#m13" title="lite header 3">v.1.3.</a>
+		<a href="#m14" title="lite header final">v.1.4.</a>
+		<a href="#m15" title="complex header structure">v.1.5.</a>
+		<a href="#m16" title="complex header structure final">v.1.6.</a>
+	</nav>
 
 
 
@@ -41,214 +56,229 @@
 
 
 
-	<nav>
-		<a href="#home">Home</a>
-		<a href="#m10" title="lite header 0">v.1.0.</a>
-		<a href="#m11" title="lite header 1">v.1.1.</a>
-		<a href="#m12" title="lite header 2">v.1.2.</a>
-		<a href="#m13" title="lite header 3">v.1.3.</a>
-		<a href="#m14" title="lite header final">v.1.4.</a>
-		<a href="#m15" title="complex header structure">v.1.5.</a>
-		<a href="#m16" title="complex header structure final">v.1.6.</a>
-	</nav>
-
-
-
-	<section>
-		<p lang="ru">Приветствую тех, кто не спит. Представляю вашему вниманию статью, в которой я расскажу вам о возможности стилизации таблицы у которой:</p>
+	<section class="main__section">
+		<p lang="ru">Приветствую тех, кто не спит. Предс&shy;тавляю вашему вниманию статью, в которой я расскажу вам о воз&shy;мож&shy;ности стили&shy;зации таб&shy;лицы у которой:</p>
 		<p lang="en">Greetings to oll who do not sleep. I present to your attention an article in which I will tell you about the possibility of styling a table in which:</p>
 
-		<ul lang="ru" class="list mb3">
-			<li id="start"><span class="but">первая строка (или группа строк) и первый столбец будут зафиксированы относительно элемента документа; &nbsp; <samp class="hiden red"><a href="#m15" title="back">back</a>&nbsp;</samp></span></li>
-			<li>основное содержимое будет свободно перемещаться внутри таблицы;</li>
-			<li>зафиксированные элементы будут согласованно смещаться относительно содержимого таблицы;</li>
+		<ul lang="ru" class="list">
+			<li><span id="start" class="target">первая строка (или группа строк) и первый столбец будут зафикси&shy;рованы относи&shy;тельно эле&shy;мента доку&shy;мента; <a href="#m15" title="back" class="target__hidden">back</a></span></li>
+			<li>основное содер&shy;жимое будет свободно пере&shy;ме&shy;щаться внутри таблицы;</li>
+			<li>зафиксированные элементы будут сог&shy;ласо&shy;ванно смещаться относи&shy;тельно содер&shy;жимого таблицы;</li>
 			<li><samp class="red">JavaScript</samp> не будет использован - только <samp class="lsin">CSS</samp>.</li>
 		</ul>
-		<ul lang="en" class="list mb3">
-			<li id="start_en"><span class="but">the first row (or group of rows) and the first column will be fixed relative to the document element; &nbsp; <samp class="hiden red"><a href="#m15" title="back">back</a>&nbsp;</samp></span></li>
+		<ul lang="en" class="list">
+			<li><span id="start_en" class="target">the first row (or group of rows) and the first column will be fixed relative to the document element; <a class="target__hidden" href="#m15" title="back">back</a></span></li>
 			<li>the main content will move freely within the table;</li>
 			<li>the fixed elements will be consistently offset relative to the table contents;</li>
 			<li><samp class="red">JavaScript</samp> will not be used - only <samp class="lsin">CSS</samp>.</li>
 		</ul>
 
 
-		<p lang="ru">Да я согласен, что есть большое количество готовых скриптов для решения данной задачи. Но я хочу, чтобы мы попробывали сделать эту таблицу на CSS.
-		Возможно было опубликовано много статей, похожую на эту. Я лишь рассказываю свой путь.</p>
+		<p lang="ru">Да я согласен, что есть большое ко&shy;ли&shy;чество гото&shy;вых скриптов для реше&shy;ния данной задачи. Но я хочу, чтобы мы попро&shy;бывали сделать эту таблицу на CSS.
+		Возможно, было опубли&shy;ковано много статей, похожую на эту. Я лишь расска&shy;зываю свой путь.</p>
 		<p lang="en">Yes, I agree that there are a large number of ready-made scripts for solving this problem.
 		There may already be many articles published similar to this. I'm just telling my way.</p>
 
 
-		<p lang="ru" class="anp mt3">Данная статья актуальна для следующих декстопных браузеров:</p>
-		<p lang="en" class="anp mt3">This article is relevant for the next desktop browsers:</p>
+		<div class="addPlace"></div>
+
+
+		<div lang="ru">Данная статья актуальна для следующих декс&shy;топных брау&shy;зеров:</div>
+		<div lang="en">This article is relevant for the next desktop browsers:</div>
 		<ul class="list l0">
-			<li><samp class="sin dib">Google Chrome</samp></li>
+			<li><samp class="sin">Google Chrome</samp></li>
 			<li><samp class="pur">Opera</samp></li>
 			<li><samp class="red">FireFox</samp></li>
 		</ul>
+
+		<hr class="hr">
 	</section>
 
 
 
 	<!-- scroll table 1.0 \ base table -->
-	<section id="m10">
-		<p lang="ru">Итак, приступим. Есть большая таблица, которую нужно поместить в маленьком окошке. При просмотре таблицы, нам необходимо видеть первую ячейку в строке и первую ячейку в столбце для любой ячейки. На первом этапе мы имеем базовую таблицу с минимальным оформлением.</p>
+	<section class="main__section" id="m10">
+		<p lang="ru">Итак, приступим. Есть большая таб&shy;лица, кото&shy;рую нужно помес&shy;тить в ма&shy;леньком окошке. При прос&shy;мотре таб&shy;лицы, нам необ&shy;ходимо видеть первую ячейку в строке и первую ячейку в столбце для любой ячейки. На первом этапе мы имеем базовую таблицу с мини&shy;мальным оформ&shy;лением.</p>
 		<p lang="en">So let's get started. There is a large table that needs to be placed in a small window. When viewing the table, we need to see the first cell in the row and the first cell in the column for any cell. At the first stage, we have a basic table with minimal design.</p>
 
-		<div class="caption pur">base table</div>
-		<div class="box-table-scroll"><table name="table" class="tt-0"></table></div>
-		<div class="item2">
-			<samp class="point" onclick='tt0_code.classList.toggle("hiden");' title="shoy/close">code:</samp>
-			<div class="hiden t_hiden" id="tt0_code" onclick="event.stopPropagation()">
-				<pre><code>&lt;div class="box-table-scroll"><br>  &lt;table class="tt-0">&lt;tbody><br>    &lt;tr>&lt;th>~&lt;/th>&lt;th>1&lt;/th>&lt;th>2&lt;/th>...&lt;th>20&lt;/th>&lt;/tr><br>    &lt;tr>&lt;td>A&lt;/td>&lt;td>A1&lt;/td>&lt;td>A2&lt;/td>...&lt;td>A20&lt;/td>&lt;/tr><br>    ...<br>  &lt;/tbody>&lt;/table><br>&lt;/div>
-				<br>&lt;style><br>  .box-table-scroll {<br>    overflow:auto;<br>    background:#fffacd;<br>    width:100%; height:60vh<br>  }<br>  .tt-0 {border-collapse:collapse}<br>  .tt-0 th, .tt-0 td {<br>    text-align:center; vertical-align:middle;<br>    border:1px solid #222<br>  }<br>  .tt-0 th {height:50px; min-width:150px}<br>  .tt-0 td {height:100px}<br>&lt;/style></code></pre>
-			</div><!-- /hiden -->
-		</div><!-- /item2 -->
+		<div class="tableBox">
+			<div class="tableBox__caption">base table</div>
+			<div class="tableBox__box-table-scroll">
+				<table name="table" class="tt-0"></table>
+			</div>
+		</div>
+
+		<div class="codeZone">
+			<div class="codeZone__onclick" onclick='tt0_code.classList.toggle("codeZone__hidden");' title="shoy/close">code:</div>
+			<div class="codeZone__hidden codeZone__hidden_t" id="tt0_code" onclick="event.stopPropagation()">
+				<pre><code>&lt;div class="tableBox__box-table-scroll"><br>  &lt;table class="tt-0">&lt;tbody><br>    &lt;tr>&lt;th>~&lt;/th>&lt;th>1&lt;/th>&lt;th>2&lt;/th>...&lt;th>20&lt;/th>&lt;/tr><br>    &lt;tr>&lt;td>A&lt;/td>&lt;td>A1&lt;/td>&lt;td>A2&lt;/td>...&lt;td>A20&lt;/td>&lt;/tr><br>    ...<br>  &lt;/tbody>&lt;/table><br>&lt;/div>
+				<br>&lt;style><br>  .tableBox__box-table-scroll {<br>    overflow:auto;<br>    background:#fffacd;<br>    width:100%; height:60vh<br>  }<br>  .tt-0 {border-collapse:collapse}<br>  .tt-0 th, .tt-0 td {<br>    text-align:center; vertical-align:middle;<br>    border:1px solid #222<br>  }<br>  .tt-0 th {height:50px; min-width:150px}<br>  .tt-0 td {height:100px}<br>&lt;/style></code></pre>
+			</div><!-- /hidden -->
+		</div><!-- /codeZone -->
+		<hr class="hr">
 	</section><!-- /base table -->
 
 
 
 	<!-- scroll table 1.1 -->
-	<section id="m11">
-		<p lang="ru">Для решения поставленной задачи будем использовать свойство <samp class="sin">position</samp>, а именно - сочетание относительного и фиксированного позиционирования при помощи значения <samp class="lsin">sticky</samp>.</p>
+	<section class="main__section" id="m11">
+		<p lang="ru">Для решения поставленной задачи будем исполь&shy;зовать свойство <samp class="sin">position</samp>, а именно - соче&shy;тание отно&shy;ситель&shy;ного и фикси&shy;рован&shy;ного позици&shy;ониро&shy;вания при помощи зна&shy;чения <samp class="lsin">sticky</samp>.</p>
 		<p lang="en">To solve this problem, we will use the <samp class="sin">position</samp> property, namely, a combination of relative and fixed positioning using the value <samp class="lsin">sticky</samp>.</p>
 
-		<p lang="ru">При таком значении свойства <samp class="sin">position</samp>, элемент рассматривается как позиционированный относительно, пока он не пересекает определённый порог, после чего рассматривается как фикси&shy;рованный. <samp class="sin">position:<span class="lsin">sticky</span></samp> работает только, если роди&shy;тельский блок имеет назначенную высоту <samp class="sin">height</samp> или <samp class="sin dib">min-height</samp>.</p>
-		<p lang="en">With this value of the <samp class="sin">position</samp> property, the element is treated as relatively positioned until it crosses a certain value, after which it is treated as fixed. <samp class="sin">position:<span class="lsin">sticky</span></samp> only works if the parent box has an assigned <samp class="sin">height</samp> or <samp class="sin dib">min-height</samp>.</p>
+		<p lang="ru">При таком значении свойства <samp class="sin">position</samp>, элемент рассмат&shy;ривается как пози&shy;циониро&shy;ванный отно&shy;сительно, пока он не пере&shy;секает опреде&shy;лённый порог, после чего рассмат&shy;ривается как фикси&shy;рованный. <samp class="sin">position:<span class="lsin">sticky</span></samp> ра&shy;бо&shy;тает только, если роди&shy;тельс&shy;кий блок имеет наз&shy;начен&shy;ную высоту <samp class="sin">height</samp> или <samp class="sin">min-height</samp>.</p>
+		<p lang="en">With this value of the <samp class="sin">position</samp> property, the element is treated as relatively positioned until it crosses a certain value, after which it is treated as fixed. <samp class="sin">position:<span class="lsin">sticky</span></samp> only works if the parent box has an assigned <samp class="sin">height</samp> or <samp class="sin">min-height</samp>.</p>
 
-		<p lang="ru">При вертикальной прокрутке для элемента указывают необ&shy;ходи&shy;мые значения свойств <samp class="sin">top</samp> и <samp class="sin">bottom</samp>. При горизонтальной прокрутке - <samp class="sin">left</samp> и <samp class="sin">righ</samp>.</p>
+		<p lang="ru">При вертикальной прокрутке для эле&shy;мен&shy;та ука&shy;зы&shy;вают необ&shy;ходи&shy;мые зна&shy;чения свойств <samp class="sin">top</samp> и <samp class="sin">bottom</samp>. При гори&shy;зон&shy;таль&shy;ной про&shy;крутке - <samp class="sin">left</samp> и <samp class="sin">righ</samp>.</p>
 		<p lang="en">When scrolling vertically, the element is specified with the values of the <samp class="sin">top</samp> and <samp class="sin">bottom</samp> properties. When scrolling horizontally - <samp class="sin">left</samp> and <samp class="sin">righ</samp>.</p>
 
-		<p lang="ru">В нашем случае для элементов <samp class="red">&lt;th></samp> установим значения свойства <samp class="sin dib">top:<span class="lsin">0;</span></samp> Для первого элемента <samp class="red">&lt;td></samp> (в каждой строке) устанавливем значения свойства <samp class="sin dib">left:<span class="lsin">0;</span></samp></p>
-		<p lang="en">In our case, for the <samp class="red">&lt;th></samp> elements, we will set set the property values: <samp class="sin dib">top:<span class="lsin">0;</span></samp> For the first <samp class="red">&lt;td></samp> element (in each row), set the property values to <samp class="sin dib">left:<span class="lsin">0;</span></samp></p>
+		<p lang="ru">В нашем случае для элементов <samp class="red">&lt;th></samp> уста&shy;новим зна&shy;чения свойст&shy;ва <samp class="sin">top:<span class="lsin">0;</span></samp> Для пер&shy;вого эле&shy;мента <samp class="red">&lt;td></samp> (в каждой строке) уста&shy;навли&shy;вaем зна&shy;чения свойст&shy;ва <samp class="sin">left:<span class="lsin">0;</span></samp></p>
+		<p lang="en">In our case, for the <samp class="red">&lt;th></samp> elements, we will set set the property values: <samp class="sin">top:<span class="lsin">0;</span></samp> For the first <samp class="red">&lt;td></samp> element (in each row), set the property values to <samp class="sin">left:<span class="lsin">0;</span></samp></p>
 
-		<pre class="item2"><code>.tt-1 th {position:sticky; top:0}<br>.tt-1 tr td:nth-child(1) {position:sticky; left:0}<br>.tt-1 th, .tt-1 td {border-width:10px}</code></pre>
+		<pre class="codeZone codeZone_o"><code>.tt-1 th {position:sticky; top:0}<br>.tt-1 tr td:nth-child(1) {position:sticky; left:0}<br>.tt-1 th, .tt-1 td {border-width:10px}</code></pre>
 
-		<p lang="ru">Я увеличил толщину границ ячеек таблицы, изменив значение свойства <samp class="sin dib">border-width:<span class="lsin">10px</span></samp>, чтобы сразу стало более понятно, что что-то идет не так :-)</p>
-		<p lang="en">I have increased the thickness of the borders of the table cells (<samp class="sin dib">border-width:<span class="lsin">10px</span></samp>) to make it immediately clear that something is wrong :-)</p>
+		<p lang="ru">Я увеличил толщину границ ячеек таб&shy;лицы, из&shy;ме&shy;нив зна&shy;чение свойст&shy;ва <samp class="sin">border-width:<span class="lsin">10px</span></samp>, чтобы сразу стало более понят&shy;но, что что-то идет не так :-)</p>
+		<p lang="en">I have increased the thickness of the borders of the table cells (<samp class="sin">border-width:<span class="lsin">10px</span></samp>) to make it immediately clear that something is wrong :-)</p>
 
 
-		<div class="caption pur">scroll table v_1.1</div>
-		<div class="box-table-scroll"><table name="table" class="tt-0 tt-1"></table></div>
-		<div class="item2">
-			<samp class="point" onclick='tt1_code.classList.toggle("hiden");' title="open/close">code:</samp>
-			<div class="hiden t_hiden" id="tt1_code" onclick="event.stopPropagation()">
-				<pre><code>&lt;div class="box-table-scroll"><br>  &lt;table class="tt-1">&lt;tbody><br>    ...<br>  &lt;/tbody>&lt;/table><br>&lt;/div><br><br>&lt;style><br>   .tt-1 {border-collapse:collapse;}<br>   .tt-1 th, .tt-1 td {<br>      text-align:center; vertical-align:middle;<br>      border:<samp class="new_css">10px</samp> solid #222<br>   }<br>   .tt-1 th {<br>      height:60px; min-width:150px;<br>      <samp class="new_css">position:sticky; top:0</samp><br>   }<br>   .tt-1 td {height:100px}<br>   <samp class="new_css">.tt-1 tr td:nth-child(1) {position:sticky; left:0}</samp><br>&lt;/style><br></code></pre>
-			</div><!-- /hiden -->
-		</div><!-- /item2 -->
+		<div class="tableBox__caption">scroll table v_1.1</div>
+		<div class="tableBox__box-table-scroll"><table name="table" class="tt-0 tt-1"></table></div>
+		<div class="codeZone">
+			<div class="codeZone__onclick" onclick='tt1_code.classList.toggle("codeZone__hidden");' title="open/close">code:</div>
+			<div class="codeZone__hidden codeZone__hidden_t" id="tt1_code" onclick="event.stopPropagation()">
+				<pre><code>&lt;div class="tableBox__box-table-scroll"><br>  &lt;table class="tt-1">&lt;tbody><br>    ...<br>  &lt;/tbody>&lt;/table><br>&lt;/div><br><br>&lt;style><br>   .tt-1 {border-collapse:collapse;}<br>   .tt-1 th, .tt-1 td {<br>      text-align:center; vertical-align:middle;<br>      border:<i class="codeZone__newCSS">10px</i> solid #222<br>   }<br>   .tt-1 th {<br>      height:60px; min-width:150px;<br>      <i class="codeZone__newCSS">position:sticky; top:0</i><br>   }<br>   .tt-1 td {height:100px}<br>   <i class="codeZone__newCSS">.tt-1 tr td:nth-child(1) {position:sticky; left:0}</i><br>&lt;/style><br></code></pre>
+			</div><!-- /hidden -->
+		</div><!-- /codeZone -->
+		<hr class="hr">
 	</section><!-- /scroll table 1.1 -->
 
 
 
 	<!-- scroll table 1.2 -->
-	<section id="m12">
-		<p lang="ru" class="anp">В целом - схема работает, но:</p>
-		<p lang="en" class="anp">In general, the scheme is works, but:</p>
+	<section class="main__section" id="m12">
+		<div lang="ru">В целом - схема работает, но:</div>
+		<div lang="en">In general, the scheme is works, but:</div>
 
 
-		<ul lang="ru" class="list mb3">
-			<li id="but_12"><span class="but">границы ячеек в первой строке и в первом столбце пропадают;<samp class="hiden red"> &nbsp; <a href="#m14" title="back">back</a>&nbsp;</samp></span></li>
-			<li>наша таблица сдвигается вверх и влево примерно на половину от ширины границ ячеек;</li>
-			<li>не ясна схема наложения элементов при прокрутке таблицы.</li>
+		<ul lang="ru" class="list">
+			<li><span id="but_12" class="target">границы ячеек в первой строке и в пер&shy;вом столб&shy;це про&shy;па&shy;дают; <a class="target__hidden" href="#m14" title="back">back</a></span></li>
+			<li>наша таблица сдвигается вверх и влево при&shy;мерно на поло&shy;вину от ши&shy;рины гра&shy;ниц ячеек;</li>
+			<li>не ясна схема наложения элементов при про&shy;крутке таб&shy;лицы.</li>
 		</ul>
-		<ul lang="en" class="list mb3">
-			<li id="but_12_en"><span class="but">the borders of the cells in the first row and in the first column disappear;<samp class="hiden red"> &nbsp; <a href="#m14" title="back">back</a>&nbsp;</samp></span></li>
+		<ul lang="en" class="list">
+			<li><span id="but_12_en" class="target">the borders of the cells in the first row and in the first column disappear; <a class="target__hidden" href="#m14" title="back">back</a></span></li>
 			<li>our table moves up and to the left by about half of the width of the cell borders;</li>
 			<li>the scheme of overlaying elements when scrolling the table is not clear.</li>
 		</ul>
 
 
-		<p lang="ru">Вначале разберемся с порядком наложения элементов друг на друга. С помощью свойства <samp class="sin">background</samp> каждому элементу нашей таблицы установим непрозрачный фон. Таким образом мы наглядно увидим взаимоотношения ячеек таблицы.</p>
+		<p lang="ru">Вначале разберемся с порядком на&shy;ложе&shy;ния эле&shy;мен&shy;тов друг на друга. С помощью свойства <samp class="sin">background</samp> каж&shy;дому эле&shy;менту нашей таб&shy;лицы уста&shy;новим не&shy;проз&shy;рачный фон. Таким обра&shy;зом мы наг&shy;лядно уви&shy;дим вза&shy;имоот&shy;ноше&shy;ния ячеек таб&shy;лицы.</p>
 		<p lang="en">At first, let's deal with the interaction of elements. Using the <samp class="sin">background</samp> property, we will set an opaque background for each element of our table. Thus, we will clearly see the relationship of the table cells.</p>
 
 
-		<div class="caption pur">scroll table v_1.2</div>
-		<div class="box-table-scroll"><table name="table" class="tt-0 tt-1 tt-2"></table></div>
-		<div class="item2">
-			<samp class="point" onclick='tt2_code.classList.toggle("hiden");' title="open/close">code:</samp>
-			<div class="hiden t_hiden" id="tt2_code" onclick="event.stopPropagation()">
-				<pre><code>&lt;div class="box-table-scroll"><br>  &lt;table class="tt-2">&lt;tbody><br>    ...<br>  &lt;/tbody>&lt;/table><br>&lt;/div><br><br>&lt;style><br>   .tt-2 {border-collapse:collapse;}<br>   .tt-2 th, .tt-2 td {<br>      text-align:center; vertical-align:middle;<br>      border:10px solid #222<br>   }<br>   .tt-2 th {<br>      height:60px; min-width:150px;<br>      position:sticky; top:0<br>      <samp class="new_css">background:#b0e0e6</samp><br>   }<br>   .tt-2 td {height:100px; <samp class="new_css">background:#fffacd</samp>}<br>   .tt-2 tr td:nth-child(1) {<br>      position:sticky; left:0;<br>      <samp class="new_css">background:#f0e68c</samp><br>   }<br>&lt;/style><br></code></pre>
-			</div><!-- /hiden -->
-		</div><!-- /item2 -->
+		<div class="tableBox__caption">scroll table v_1.2</div>
+		<div class="tableBox__box-table-scroll"><table name="table" class="tt-0 tt-1 tt-2"></table></div>
+		<div class="codeZone">
+			<div class="codeZone__onclick" onclick='tt2_code.classList.toggle("codeZone__hidden");' title="open/close">code:</div>
+			<div class="codeZone__hidden codeZone__hidden_t" id="tt2_code" onclick="event.stopPropagation()">
+				<pre><code>&lt;div class="tableBox__box-table-scroll"><br>  &lt;table class="tt-2">&lt;tbody><br>    ...<br>  &lt;/tbody>&lt;/table><br>&lt;/div><br><br>&lt;style><br>   .tt-2 {border-collapse:collapse;}<br>   .tt-2 th, .tt-2 td {<br>      text-align:center; vertical-align:middle;<br>      border:10px solid #222<br>   }<br>   .tt-2 th {<br>      height:60px; min-width:150px;<br>      position:sticky; top:0<br>      <i class="codeZone__newCSS">background:#b0e0e6</i><br>   }<br>   .tt-2 td {height:100px; <i class="codeZone__newCSS">background:#fffacd</i>}<br>   .tt-2 tr td:nth-child(1) {<br>      position:sticky; left:0;<br>      <i class="codeZone__newCSS">background:#f0e68c</i><br>   }<br>&lt;/style><br></code></pre>
+			</div><!-- /hidden -->
+		</div><!-- /codeZone -->
+		<hr class="hr">
 	</section><!-- /scroll table 1.2 -->
 
 
 
 	<!-- scroll table 1.3 -->
-	<section id="m13">
-		<p lang="ru">Стало намного лучше. Осталось дополнительно закрепить первую ячейку в первой строке и задать расположение ячеек с помощью свойства <samp class="sin">z-index</samp>.</p>
+	<section class="main__section" id="m13">
+		<p lang="ru">Стало намного лучше. Осталось до&shy;пол&shy;ни&shy;тельно за&shy;кре&shy;пить первую ячейку в пер&shy;вой строке и за&shy;дать рас&shy;поло&shy;жение ячеек с помощью свой&shy;ства <samp class="sin">z-index</samp>.</p>
 		<p lang="en">Much better. It remains to additionally fix the first cell in the first row, and set the location of the cells using the <samp class="sin">z-index</samp> property.</p>
 
-		<p lang="ru">Значение свойства <samp class="sin">z-index</samp> для ячеек в первой строке должно быть выше, чем в последующих строках. Для них устанавливаем <samp class="sin dib">z-index:<span class="lsin">3</span></samp>. У первой ячейки в первой строке значение должно быть еще больше - <samp class="sin dib">z-index:<span class="lsin">4</span></samp>.</p>
-		<p lang="en">The value of the <samp class="sin">z-index</samp> property for cells in the first row should be higher than in subsequent rows. We set the <samp class="sin dib">z-index:<span class="lsin">3</span></samp> for them. The first cell in the first row should have an even higher value - <samp class="sin dib">z-index:<span class="lsin">4</span></samp>.</p>
+		<p lang="ru">Значение свойства <samp class="sin">z-index</samp> для ячеек в первой строке должно быть выше, чем в по&shy;сле&shy;дующих строках. Для них уста&shy;навли&shy;ваем <samp class="sin">z-index:<span class="lsin">3</span></samp>. У пер&shy;вой ячейки в первой строке зна&shy;чение должно быть еще больше - <samp class="sin">z-index:<span class="lsin">4</span></samp>.</p>
+		<p lang="en">The value of the <samp class="sin">z-index</samp> property for cells in the first row should be higher than in subsequent rows. We set the <samp class="sin">z-index:<span class="lsin">3</span></samp> for them. The first cell in the first row should have an even higher value - <samp class="sin">z-index:<span class="lsin">4</span></samp>.</p>
 
-		<p lang="ru">Ячейки в первой колонке должны заходить под ячейки первой строки, для этого устанавливаем им <samp class="sin dib">z-index:<span class="lsin">2</span></samp>.</p>
-		<p lang="en">The cells in the first column should go under the cells of the first row, for this we set them <samp class="sin dib">z-index:<span class="lsin">2</span></samp>.</p>
+		<p lang="ru">Ячейки в первой колонке должны захо&shy;дить под ячейки пер&shy;вой стро&shy;ки, для этого уста&shy;навли&shy;ваем им <samp class="sin">z-index:<span class="lsin">2</span></samp>.</p>
+		<p lang="en">The cells in the first column should go under the cells of the first row, for this we set them <samp class="sin">z-index:<span class="lsin">2</span></samp>.</p>
 
-		<p lang="ru">Так же посмотрим как будет вести себя таблица, если установить толщину границ ячеек равную <samp class="lsin dib">0px</samp>.</p>
-		<p lang="en">Let's also see how the table will behave if we set the thickness of the cell borders to <samp class="lsin dib">0px</samp>.</p>
-
-
-		<pre class="item2"><code>.tt-3 th {z-index:3}<br>.tt-3 tr th:nth-child(1) {left:0; z-index:4}<br>.tt-3 tr td:nth-child(1) {z-index:2}<br>.tt-3 th,.tt-3 td {border-width:0}</code></pre>
+		<p lang="ru">Так же посмотрим как будет вести себя таб&shy;лица, если уста&shy;новить тол&shy;щину гра&shy;ниц ячеек рав&shy;ную <samp class="lsin">0px</samp>.</p>
+		<p lang="en">Let's also see how the table will behave if we set the thickness of the cell borders to <samp class="lsin">0px</samp>.</p>
 
 
-		<div class="caption pur">scroll table v_1.3</div>
-		<div class="box-table-scroll"><table name="table" class="tt-0 tt-1 tt-2 tt-3"></table></div>
-		<div class="item2">
-			<samp class="point" onclick='tt3_code.classList.toggle("hiden");' title="open/close">code:</samp>
-			<div class="hiden t_hiden" id="tt3_code" onclick="event.stopPropagation()">
-				<pre><code>&lt;div class="box-table-scroll"><br>  &lt;table class="tt-3">&lt;tbody><br>    ...<br>  &lt;/tbody>&lt;/table><br>&lt;/div><br><br>&lt;style><br>   .tt-3 {border-collapse:collapse;}<br>   .tt-3 th, .tt-3 td {<br>      text-align:center; vertical-align:middle;<br>      <samp class="new_css">border-width:0</samp><br>   }<br>   .tt-3 th {<br>      height:60px; min-width:150px;<br>      position:sticky; top:0; <samp class="new_css">z-index:3;</samp><br>      background:#b0e0e6<br>   }<br>   <samp class="new_css">.tt-3 tr th:nth-child(1) {left:0; z-index:4; background:#5F9EA0}</samp><br><br>   .tt-3 td {height:100px; background:#fffacd}<br>   .tt-3 tr td:nth-child(1) {<br>      position:sticky; left:0; <samp class="new_css">z-index:2;</samp><br>      background:#f0e68c<br>   }<br>&lt;/style><br></code></pre>
-			</div><!-- /hiden -->
-		</div><!-- /item2 -->
+		<pre class="codeZone codeZone_o"><code>.tt-3 th {z-index:3}<br>.tt-3 tr th:nth-child(1) {left:0; z-index:4}<br>.tt-3 tr td:nth-child(1) {z-index:2}<br>.tt-3 th,.tt-3 td {border-width:0}</code></pre>
+
+
+		<div class="tableBox__caption">scroll table v_1.3</div>
+		<div class="tableBox__box-table-scroll"><table name="table" class="tt-0 tt-1 tt-2 tt-3"></table></div>
+		<div class="codeZone">
+			<div class="codeZone__onclick" onclick='tt3_code.classList.toggle("codeZone__hidden");' title="open/close">code:</div>
+			<div class="codeZone__hidden codeZone__hidden_t" id="tt3_code" onclick="event.stopPropagation()">
+				<pre><code>&lt;div class="tableBox__box-table-scroll"><br>  &lt;table class="tt-3">&lt;tbody><br>    ...<br>  &lt;/tbody>&lt;/table><br>&lt;/div><br><br>&lt;style><br>   .tt-3 {border-collapse:collapse;}<br>   .tt-3 th, .tt-3 td {<br>      text-align:center; vertical-align:middle;<br>      <i class="codeZone__newCSS">border-width:0</i><br>   }<br>   .tt-3 th {<br>      height:60px; min-width:150px;<br>      position:sticky; top:0; <i class="codeZone__newCSS">z-index:3;</i><br>      background:#b0e0e6<br>   }<br>   <i class="codeZone__newCSS">.tt-3 tr th:nth-child(1) {left:0; z-index:4; background:#5F9EA0}</i><br><br>   .tt-3 td {height:100px; background:#fffacd}<br>   .tt-3 tr td:nth-child(1) {<br>      position:sticky; left:0; <i class="codeZone__newCSS">z-index:2;</i><br>      background:#f0e68c<br>   }<br>&lt;/style><br></code></pre>
+			</div><!-- /hidden -->
+		</div><!-- /codeZone -->
+		<hr class="hr">
 	</section><!-- /scroll table 1.3 -->
 
 
 
 	<!-- scroll table 1.4 -->
-	<section id="m14">
-		<p lang="ru">Мы почти у цели. На данном этапе таблица плавно прокручивается и не смещается влево и вверх. Осталось установить рамки ячеек, но тут есть <a href="#but_12" title='to litle "but"' class="sin tdu">маленькое <b>но</b></a>.</p>
-		<p lang="en">We almost reached our target. At this stage, the table scrolls smoothly, and does not move to the left and up. It remains to set the cell frames, but there is a <a href="#but_12_en" title='to little "but"' class="sin tdu">little <b>but</b></a>.</p>
-
-		<p class="mb3" lang="ru">Очевидно, что мы не можем использовать свойство <samp class="sin">border</samp>. Для имитации свойства <samp class="sin">border</samp> мы будем использовать свойство <samp class="sin dib">box-shadow</samp>. Если мы будем использовать комбинацию из двух этих свойств, то у нас будет смещение создаваемых границ на стыках ячеек.</p>
-		<p lang="en">Obviously, we can't use the <samp class="sin">border</samp> property. To simulate the <samp class="sin">border</samp> property, we will use the <samp class="sin dib">box-shadow</samp> property. If we use a combination of these two properties, then we will have an offset of the created borders at the junctions of the cells.</p>
+	<section class="main__section" id="m14">
+		<p lang="ru">Мы почти у цели. На данном этапе таб&shy;лица плав&shy;но про&shy;кручи&shy;вается и не сме&shy;щается влево и вверх. Оста&shy;лось уста&shy;новить рамки ячеек, но тут есть <a href="#but_12" title='to litle "but"' class="link">малень&shy;кое <b>но</b></a>.</p>
+		<p lang="en">We almost reached our target. At this stage, the table scrolls smoothly, and does not move to the left and up. It remains to set the cell frames, but there is a <a href="#but_12_en" title='to little "but"' class="link">little <b>but</b></a>.</p>
 
 
-		<p lang="ru">Для уменьшения кода и понимания объема работы, нам необ&shy;ходимо провести небольшой анализ структуры нашей таблицы. Мы имеем 4 группы ячеек:</p>
+		<p lang="ru">Очевидно, что мы не можем ис&shy;пользо&shy;вать свой&shy;ст&shy;во <samp class="sin">border</samp>. Для ими&shy;тации свой&shy;ства <samp class="sin">border</samp> мы будем ис&shy;поль&shy;зовать свой&shy;ство <samp class="sin">box-shadow</samp>. Если мы будем ис&shy;поль&shy;зовать комби&shy;нацию из двух этих свойств, то у нас будет сме&shy;щение соз&shy;дава&shy;емых границ на стыках ячеек.</p>
+		<p lang="en">Obviously, we can't use the <samp class="sin">border</samp> property. To simulate the <samp class="sin">border</samp> property, we will use the <samp class="sin">box-shadow</samp> property. If we use a combination of these two properties, then we will have an offset of the created borders at the junctions of the cells.</p>
+
+
+		<div class="addPlace"></div>
+
+
+		<p lang="ru">Для уменьшения кода и понимания объема ра&shy;боты, нам необ&shy;ходимо про&shy;вести не&shy;боль&shy;шой анализ стру&shy;ктуры нашей таб&shy;лицы. Мы имеем 4 группы ячеек:</p>
 		<p lang="en">For reduce the code and understand the amount of work, we need to do a little analysis of the structure of our table. We have 4 groups of cells:</p>
 
 
-		<pre class="item2 mb3"><code><ul class="list"><li>td {z-index: auto}</li><li>tr td:nth-child(1) {z-index: 2}</li><li>th {z-index: 3}</li><li>tr th:nth-child(1) {z-index: 4}</li></ul></code></pre>
+		<pre class="codeZone"><code><ul class="list"><li>td {z-index: auto}</li><li>tr td:nth-child(1) {z-index: 2}</li><li>th {z-index: 3}</li><li>tr th:nth-child(1) {z-index: 4}</li></ul></code></pre>
 
-		<p lang="ru">Если мы установим одинаковую тень для всех ячеек, то границы внутри таблицы будут в два раза больше, чем внешние. Это нас не устраивает.</p>
+
+		<div class="addPlace"></div>
+
+
+		<p lang="ru">Если мы установим одинаковую тень для всех ячеек, то гра&shy;ницы внут&shy;ри таб&shy;лицы будут в два раза больше, чем внеш&shy;ние. Это нас не устраи&shy;вает.</p>
 		<p lang="en">If we set the same shadow for all cells, then the borders inside the table will be twice as large as the outside ones. This does not suit us.</p>
 
-		<p lang="ru" class="mb3">Если мы начнем устанавливать рамки слева направо и сверху вниз (верхнюю и левую границы для всех ячеек), то для последнего столбца и строки нам необходимо будет добавлять дополнительный селектор - <samp class="red dib">:last-child</samp>. Увеличение количества селекторов нам не нужно.</p>
-		<p lang="en">If we start to set borders from left to right and from top to bottom (top and left borders for all cells), then for the last column and row, we will need to add an additional selector - <samp class="red dib">:last-child</samp>. We don't need to increase the number of selectors.</p>
+		<p lang="ru">Если мы начнем устанавливать рамки слева на&shy;право и сверху вниз (верх&shy;нюю и левую гра&shy;ницы для всех ячеек), то для по&shy;след&shy;него столб&shy;ца и строки нам необ&shy;ходи&shy;мо будет добав&shy;лять допол&shy;нитель&shy;ный се&shy;лек&shy;тор - <samp class="red">:last-child</samp>. Уве&shy;личе&shy;ние коли&shy;чест&shy;ва се&shy;лек&shy;торов нам не нужно.</p>
+		<p lang="en">If we start to set borders from left to right and from top to bottom (top and left borders for all cells), then for the last column and row, we will need to add an additional selector - <samp class="red">:last-child</samp>. We don't need to increase the number of selectors.</p>
 
-		<p lang="ru">Таким образом мы будем устанавливать границы ячеек с конца таблицы. Для элемента <samp class="red">&lt;td></samp> - нижнюю и правую (рис. a). В первой колонке для элемента <samp class="red">&lt;td></samp> дополнительно установим левую границу (рис. b). В заголовках столбцов (элемент <samp class="red">&lt;th></samp>) - дополнительно установим верхнюю границу (рис. c). В первой ячейке таблицы - все четыре границы. (рис. d).</p>
+
+		<div class="addPlace"></div>
+
+
+		<p lang="ru">Таким образом мы будем уста&shy;на&shy;вли&shy;вать гра&shy;ницы ячеек с конца таб&shy;лицы. Для эле&shy;мента <samp class="red">&lt;td></samp> - ниж&shy;нюю и пра&shy;вую (рис. a). В пер&shy;вой кол&shy;онке для эле&shy;мента <samp class="red">&lt;td></samp> допол&shy;нитель&shy;но уста&shy;новим левую гра&shy;ницу (рис. b). В за&shy;голов&shy;ках столб&shy;цов (эле&shy;мент <samp class="red">&lt;th></samp>) - допол&shy;нительно уста&shy;новим верх&shy;нюю гра&shy;ницу (рис. c). В первой ячейке таб&shy;лицы - все четыре гра&shy;ницы. (рис. d).</p>
 		<p lang="en">So, we will set cell borders from the end of the table. For the <samp class="red">&lt;td></samp> element  - bottom and right borders (pict. a). In the first column for the <samp class="red">&lt;td></samp> element - we will additionally set the left border (pict. b). In the column headings (<samp class="red">&lt;th></samp> element) - additionally set the upper border (pict. c). In the first cell of the table - all four borders (pict. d).</p>
 
 
-		<div class="box_of_pick">
-			<div class="pick_of_border but" id="pick_a"><span><a class="hiden sin" href="#m15b">back</a></span></div>
-			<div class="pick_of_border"></div>
-			<div class="pick_of_border"></div>
-			<div class="pick_of_border"></div>
+		<div class="pickBorder">
+			<div class="pickBorder__item target" id="pick_a">
+				<a class="target__hidden target__hidden_pickBorder pickBorder__item__link" href="#m15b">back</a>
+			</div>
+			<div class="pickBorder__item"></div>
+			<div class="pickBorder__item"></div>
+			<div class="pickBorder__item"></div>
 		</div>
 
 
-		<p lang="ru">Напоминаю - мы не можем использовать свойство <samp class="sin">border</samp>. Для имитации свойства <samp class="sin">border</samp>, мы будем использовать свойство <samp class="sin dib">box-shadow</samp>.</p>
-		<p lang="en">Let me remind you - we cannot use the <samp class="sin">border</samp> property. To simulate the <samp class="sin">border</samp> property, we will use the <samp class="sin dib">box-shadow</samp> property.</p>
+		<p lang="ru">Напоминаю - мы не можем ис&shy;поль&shy;зо&shy;вать свой&shy;ство <samp class="sin">border</samp>. Для ими&shy;тации свой&shy;ства <samp class="sin">border</samp>, мы будем ис&shy;пользо&shy;вать свой&shy;ство <samp class="sin">box-shadow</samp>.</p>
+		<p lang="en">Let me remind you - we cannot use the <samp class="sin">border</samp> property. To simulate the <samp class="sin">border</samp> property, we will use the <samp class="sin">box-shadow</samp> property.</p>
 
 
-		<pre class="item2"><code>a .tt-4 td {box-shadow:inset -1px -1px 0 #000}<br>b .tt-4 tr td:nth-child(1) {box-shadow:inset -1px -1px 0 #000, inset 1px 0 0 #000}<br>c .tt-4 th {box-shadow:inset -1px -1px 0 #000, inset 0 1px 0 #000}<br>d .tt-4 tr th:nth-child(1) {box-shadow:inset -1px -1px 0 #000, inset 1px 1px 0 #000}</code></pre>
+		<pre class="codeZone codeZone_o"><code>a .tt-4 td {<br>  box-shadow:inset -1px -1px 0 #000;<br>}<br>b .tt-4 tr td:nth-child(1) {<br>  box-shadow:inset -1px -1px 0 #000,<br>             inset 1px 0 0 #000;<br>}<br>c .tt-4 th {<br>  box-shadow:inset -1px -1px 0 #000,<br>             inset 0 1px 0 #000;<br>}<br>d .tt-4 tr th:nth-child(1) {<br>  box-shadow:inset -1px -1px 0 #000,<br>             inset 1px 1px 0 #000;<br>}</code></pre>
 
 
-		<p lang="ru" class="anp">Добавлю еще пару моментов.</p>
-		<p lang="en" class="anp">I will add a few moment.</p>
+		<div lang="ru">Добавлю еще пару моментов.</div>
+		<div lang="en">I will add a few moment.</div>
 
 		<ul lang="ru" class="list">
-			<li>Если мы установим более толстые рамки, то необходимо добавить соот&shy;ветст&shy;вующие <samp class="sin">padding</samp>, иначе содержимое будет отобра&shy;жаться со смещением. Разницу в <samp class="red">1px</samp> заметить сложно, но она есть.</li>
-			<li>Вместо свойства <samp class="sin">box-shadow</samp> мы можем исполь&shy;зовать псевдо&shy;элемент <samp class="sin">::before</samp> у элементов таблицы и устанав&shy;ливать свойство <samp class="sin">border</samp> для <samp class="sin">::before</samp>. Так легче регулировать ширину границ ячеек, но мы получим больше кода и некоторые артефакты :-)</li>
+			<li>Если мы установим более толстые рамки, то необ&shy;ходимо доба&shy;вить соот&shy;ветст&shy;вующие <samp class="sin">padding</samp>, иначе содер&shy;жимое будет отобра&shy;жаться со сме&shy;ще&shy;нием. Раз&shy;ницу в <samp class="red">1px</samp> заме&shy;тить сложно, но она есть.</li>
+			<li>Вместо свой&shy;ства <samp class="sin">box-shadow</samp> мы можем исполь&shy;зовать псевдо&shy;элемент <samp class="sin">::before</samp> у эле&shy;ментов таб&shy;лицы и уста&shy;нав&shy;ливать свой&shy;ство <samp class="sin">border</samp> для <samp class="sin">::before</samp>. Так легче регу&shy;лиро&shy;вать ширину границ ячеек, но мы полу&shy;чим больше кода и неко&shy;торые арте&shy;факты :-)</li>
 		</ul>
 		<ul lang="en" class="list">
 			<li>If we set thicker frames, then we need to add the appropriate <samp class="sin">padding</samp>, otherwise the content will be displayed with an offset. The difference in <samp class="red">1px</samp> is difficult to notice, but it is there.</li>
@@ -256,94 +286,124 @@
 		</ul>
 
 
-		<div class="caption pur">scroll table v_1.4</div>
-		<div class="box-table-scroll"><table name="table" class="tt-0 tt-1 tt-2 tt-3 tt-4"></table></div>
-		<div class="item2 mb5">
-			<samp class="point" onclick='tt4_code.classList.toggle("hiden");' title="open/close">code:</samp>
-			<div class="hiden t_hiden" id="tt4_code" onclick="event.stopPropagation()">
-				<pre><code>&lt;div class="box-table-scroll"><br>  &lt;table class="tt-4">&lt;tbody><br>    ...<br>  &lt;/tbody>&lt;/table><br>&lt;/div><br><br>&lt;style><br>  .box-table-scroll {<br>    overflow:auto; background:#fffacd; width:100%; height:60vh<br>  }<br>  .tt-4 {<br>    border-collapse:collapse;<br>   <span class="but" id="ttf_1"> border:solid transparent; border-width:0 .5px .5px 0;    /* (1) */ </span><br>  }<br>  .tt-4 th, .tt-4 td {text-align:center; vertical-align:middle}<br>  .tt-4 th {<br>    height:60px; min-width:150px;<br>    position:sticky; top:0; z-index:3;<br>    background:#b0e0e6;<br>    <samp class="new_css">box-shadow:inset -1px -1px 0 #000, inset 0 1px 0 #000</samp><br>  }<br>  .tt-4 tr th:nth-child(1) {<br>    left:0; z-index:4; background:#5F9EA0;<br>    <samp class="new_css">box-shadow:inset -1px -1px 0 #000, inset 1px 1px 0 #000</samp><br>  }<br>  .tt-4 td {<br>    height:100px; background:#fffacd;<br>    <samp class="new_css">box-shadow:inset -1px -1px 0 #000</samp><br>  }<br>  .tt-4 tr td:nth-child(1) {<br>    position:sticky; left:0; z-index:2; background:#f0e68c;<br>    <samp class="new_css">box-shadow:inset -1px -1px 0 #000, inset 1px 0 0 #000</samp><br>  }<br>&lt;/style><br><br></code></pre>
-				<div lang="ru" class="comment_ttf_code"><a href="#ttf_1"><samp class="pur tdu">(1)</samp></a> - добавил правую и нижнюю прозрачную границу таблицы так как иногда пропадали соот&shy;ветст&shy;вующие границы у последних ячеек. Думаю что проблема на аппаратном уровне, или же все дело в магии, а именно - в магии иллюзии ;-)</div>
-				<div lang="en" class="comment_ttf_code"><a href="#ttf_1"><samp class="pur tdu">(1)</samp></a> - added the right and bottom transparent border of the table, as sometimes the corresponding borders for the last cells disappeared. I think that the problem is at the hardware level, or is it all about magic, namely, the magic of illusion ;-)</div>
-			</div><!-- /hiden -->
-		</div><!-- /item2 -->
+		<div class="tableBox__caption">scroll table v_1.4</div>
+		<div class="tableBox__box-table-scroll"><table name="table" class="tt-0 tt-1 tt-2 tt-3 tt-4"></table></div>
+		<div class="codeZone">
+			<div class="codeZone__onclick" onclick='tt4_code.classList.toggle("codeZone__hidden");' title="open/close">code:</div>
+			<div class="codeZone__hidden codeZone__hidden_t" id="tt4_code" onclick="event.stopPropagation()">
+				<pre><code>&lt;div class="tableBox__box-table-scroll"><br>  &lt;table class="tt-4">&lt;tbody><br>    ...<br>  &lt;/tbody>&lt;/table><br>&lt;/div><br><br>&lt;style><br>  .tableBox__box-table-scroll {<br>    overflow:auto; background:#fffacd; width:100%; height:60vh<br>  }<br>  .tt-4 {<br>    border-collapse:collapse;<br>   <span class="target" id="ttf_1"> border:solid transparent; border-width:0 .5px .5px 0;    /* (1) */ </span><br>  }<br>  .tt-4 th, .tt-4 td {text-align:center; vertical-align:middle}<br>  .tt-4 th {<br>    height:60px; min-width:150px;<br>    position:sticky; top:0; z-index:3;<br>    background:#b0e0e6;<br>    <i class="codeZone__newCSS">box-shadow:inset -1px -1px 0 #000, inset 0 1px 0 #000</i><br>  }<br>  .tt-4 tr th:nth-child(1) {<br>    left:0; z-index:4; background:#5F9EA0;<br>    <i class="codeZone__newCSS">box-shadow:inset -1px -1px 0 #000, inset 1px 1px 0 #000</i><br>  }<br>  .tt-4 td {<br>    height:100px; background:#fffacd;<br>    <i class="codeZone__newCSS">box-shadow:inset -1px -1px 0 #000</i><br>  }<br>  .tt-4 tr td:nth-child(1) {<br>    position:sticky; left:0; z-index:2; background:#f0e68c;<br>    <i class="codeZone__newCSS">box-shadow:inset -1px -1px 0 #000, inset 1px 0 0 #000</i><br>  }<br>&lt;/style><br><br></code></pre>
+				<div class="codeZone__comment">
+					<div lang="ru">
+						<a class="codeZone__comment__link" href="#ttf_1">(1)</a> - добавил правую и нижнюю прозрач&shy;ную гра&shy;ницу таб&shy;лицы так как иногда про&shy;па&shy;дали соот&shy;ветст&shy;вующие гра&shy;ницы у по&shy;след&shy;них ячеек. Думаю что проб&shy;лема на аппа&shy;рат&shy;ном уровне, или же все дело в магии, а именно - в магии иллюзии ;-)
+					</div>
+					<div lang="en">
+						<a class="codeZone__comment__link" href="#ttf_1">(1)</a> - added the right and bottom transparent border of the table, as sometimes the corresponding borders for the last cells disappeared. I think that the problem is at the hardware level, or is it all about magic, namely, the magic of illusion ;-)
+					</div>
+				</div>
 
-		<p lang="ru">Итак, мы получили таблицу с простым фиксированным заголовком и первой колонкой. Таблицу можно стилизовать по вашему вкусу или требованию шаблона и использовать в своих проектах.</p>
+			</div><!-- /hidden -->
+		</div><!-- /codeZone -->
+
+
+		<div class="addPlace"></div>
+
+
+		<p lang="ru">Итак, мы получили таблицу с простым фик&shy;сиро&shy;ван&shy;ным заго&shy;ловком и первой колон&shy;кой. Таб&shy;лицу можно стили&shy;зовать по вашему вкусу или тре&shy;бова&shy;нию шаб&shy;лона и ис&shy;поль&shy;зовать в своих про&shy;ектах.</p>
 		<p lang="en">So, we got a table with a simple fixed header and the first column. The table can be styled according to your taste or the requirement of the template and used in your projects.</p>
+		<hr class="hr">
 	</section><!-- /scroll table 1.4 -->
 
 
 
 	<!-- scroll table 1.5 -->
-	<section id="m15">
-		<p lang="ru">А теперь, как я и говорил <a href="#start" class="sin tdu">в начале</a>, посмотрим пример более сложной структуры заголовка таблицы.</p>
-		<p lang="en">And now, as I said <a href="#start_en" class="sin tdu">in the beginning</a>, let's look at an example of a more complex table header structure.</p>
+	<section class="main__section" id="m15">
+		<p lang="ru">А теперь, как я и говорил <a href="#start" class="link">в начале</a>, по&shy;смот&shy;рим при&shy;мер более слож&shy;ной струк&shy;туры заго&shy;ловка таб&shy;лицы.</p>
+		<p lang="en">And now, as I said <a href="#start_en" class="link">in the beginning</a>, let's look at an example of a more complex table header structure.</p>
 
-		<p lang="ru" class="mb3">Возьмем таблицу заголовок у которой состоит из двух строк. В заголовке некоторые ячейки объединены по вертикали, некоторые объединены по горизонтали.</p>
-		<p lang="en" class="mb3">Let's take a table whose header consists of two rows. In the header, some cells are combined vertically, some are combined horizontally.</p>
+		<p lang="ru">Возьмем таблицу заголовок у которой состоит из двух строк. В заго&shy;ловке неко&shy;торые ячейки объе&shy;динены по вер&shy;тикали, неко&shy;торые объе&shy;динены по гори&shy;зонтали.</p>
+		<p lang="en">Let's take a table whose header consists of two rows. In the header, some cells are combined vertically, some are combined horizontally.</p>
 
-		<p lang="ru">Все элементы таблицы <samp class="red">&lt;th></samp> объединим при помощи элемента <samp class="red">&lt;tbody></samp>, все остальные ячейки <samp class="red">&lt;td></samp> объединим при помощи второго элемента <samp class="red">&lt;tbody></samp>.</p>
+
+		<div class="addPlace"></div>
+
+
+		<p lang="ru">Все элементы таблицы <samp class="red">&lt;th></samp> объе&shy;ди&shy;ним при по&shy;мощи эле&shy;мента <samp class="red">&lt;tbody></samp>, все осталь&shy;ные ячейки <samp class="red">&lt;td></samp> объе&shy;диним при по&shy;мощи вто&shy;рого эле&shy;мента <samp class="red">&lt;tbody></samp>.</p>
 		<p lang="en">All elements <samp class="red">&lt;th></samp> of the our table will be combined using the <samp class="red">&lt;tbody></samp> element, all other cells (<samp class="red">&lt;td></samp>) will be combined using the second <samp class="red">&lt;tbody></samp> element.</p>
 
 
-		<p lang="ru">Данная структура поможет нам зафиксировать первый элемент <samp class="red">&lt;tbody></samp> со всеми ячейки находящиеся в нем. Так будет проще управлять заголовком таблицы.</p>
+		<p lang="ru">Данная структура поможет нам за&shy;фик&shy;сиро&shy;вать первый эле&shy;мент <samp class="red">&lt;tbody></samp> со всеми ячейки нахо&shy;дя&shy;щиеся в нем. Так будет проще управ&shy;лять заго&shy;ловком таб&shy;лицы.</p>
 		<p lang="en">This structure will help us capture the first <samp class="red">&lt;tbody></samp> element with all the cells that are in it. This makes it easier to manage the table title.</p>
 
 		<div id="m15b"></div>
-		<p lang="ru">Для элементов <samp class="red">&lt;th></samp>, находящихся во второй и последующих строках, мы будем использовать "границы" указанные на <a href="#pick_a" class="sin tdu">рис.а</a>. Остальной код измениться незначительно.</p>
-		<p lang="en">For the <samp class="red">&lt;th></samp> elements that are in the second and subsequent rows, we will use the "borders" shown in <a href="#pick_a" class="sin tdu">pict. а</a>. The rest of the code will change slightly.</p>
+		<p lang="ru">Для элементов <samp class="red">&lt;th></samp>, нахо&shy;дящихся во второй и после&shy;дующих стро&shy;ках, мы будем ис&shy;пользо&shy;вать "границы" ука&shy;зан&shy;ные на <a href="#pick_a" class="link">рис.а</a>. Осталь&shy;ной код изме&shy;ниться незна&shy;чи&shy;тельно.</p>
+		<p lang="en">For the <samp class="red">&lt;th></samp> elements that are in the second and subsequent rows, we will use the "borders" shown in <a href="#pick_a" class="link">pict. а</a>. The rest of the code will change slightly.</p>
 
-		<div class="caption pur">scroll table v_1.5</div>
-		<div class="box-table-scroll"><table name="table_2_body" class="tt-0 tt-5"></table></div>
-		<div class="item2">
-			<samp class="point" onclick='tt5_code.classList.toggle("hiden");' title="open/close">code:</samp>
-			<div class="hiden t_hiden" id="tt5_code" onclick="event.stopPropagation()">
-				<pre><code>&lt;div class="box-table-scroll"><br>  &lt;table class="tt-5"><br>    &lt;tbody><br>      &lt;!-- th zone --><br>    &lt;/tbody><br>    &lt;tbody><br>      &lt;!-- td zone --><br>    &lt;/tbody><br>  &lt;/table><br>&lt;/div><br><br>&lt;style><br>  .tt-5 {<br>    border-collapse:collapse;<br>    border:solid transparent; border-width:0 .5px .5px 0<br>  }<br>  .tt-5 th, .tt-5 td {<br>    text-align:center; vertical-align:middle;<br>    box-shadow:inset -1px -1px 0 #000<br>  }<br>  .tt-5 tbody:nth-child(1){<br>    position:sticky; top:0; z-index:3<br>  }<br>  .tt-5 th {height:60px; min-width:150px; background:#b0e0e6}<br>  .tt-5 tr:nth-child(1) th {<br>    box-shadow:inset -1px -1px 0 #000, inset 0 1px 0 #000<br>  }<br>  .tt-5 tr:nth-child(1) th:nth-child(1) {<br>    position:sticky; left:0; z-index:4; background:#5F9EA0;<br>    box-shadow:inset -1px -1px 0 #000, inset 1px 1px 0 #000<br>  }<br>  .tt-5 td {height:100px; background:#fffacd;}<br>  .tt-5 tr td:nth-child(1) {<br>    position:sticky; left:0; z-index:2; background:#f0e68c;<br>    box-shadow:inset -1px -1px 0 #000, inset 1px 0 0 #000<br>  }<br>&lt;/style></code></pre>
-			</div><!-- /hiden -->
-		</div><!-- /item2 -->
-
-		<p lang="ru" class="anp">В этот момент перед глазами ноутбука пробежала вся его жизнь :-))</p>
-		<p lang="en" class="anp">At this moment, before the eyes of the laptop, his whole life ran away :-))</p>
+		<div class="tableBox__caption">scroll table v_1.5</div>
+		<div class="tableBox__box-table-scroll"><table name="table_2_body" class="tt-0 tt-5"></table></div>
+		<div class="codeZone">
+			<div class="codeZone__onclick" onclick='tt5_code.classList.toggle("codeZone__hidden");' title="open/close">code:</div>
+			<div class="codeZone__hidden codeZone__hidden_t" id="tt5_code" onclick="event.stopPropagation()">
+				<pre><code>&lt;div class="tableBox__box-table-scroll"><br>  &lt;table class="tt-5"><br>    &lt;tbody><br>      &lt;!-- th zone --><br>    &lt;/tbody><br>    &lt;tbody><br>      &lt;!-- td zone --><br>    &lt;/tbody><br>  &lt;/table><br>&lt;/div><br><br>&lt;style><br>  .tt-5 {<br>    border-collapse:collapse;<br>    border:solid transparent; border-width:0 .5px .5px 0<br>  }<br>  .tt-5 th, .tt-5 td {<br>    text-align:center; vertical-align:middle;<br>    box-shadow:inset -1px -1px 0 #000<br>  }<br>  .tt-5 tbody:nth-child(1){<br>    position:sticky; top:0; z-index:3<br>  }<br>  .tt-5 th {height:60px; min-width:150px; background:#b0e0e6}<br>  .tt-5 tr:nth-child(1) th {<br>    box-shadow:inset -1px -1px 0 #000, inset 0 1px 0 #000<br>  }<br>  .tt-5 tr:nth-child(1) th:nth-child(1) {<br>    position:sticky; left:0; z-index:4; background:#5F9EA0;<br>    box-shadow:inset -1px -1px 0 #000, inset 1px 1px 0 #000<br>  }<br>  .tt-5 td {height:100px; background:#fffacd;}<br>  .tt-5 tr td:nth-child(1) {<br>    position:sticky; left:0; z-index:2; background:#f0e68c;<br>    box-shadow:inset -1px -1px 0 #000, inset 1px 0 0 #000<br>  }<br>&lt;/style></code></pre>
+			</div><!-- /hidden -->
+		</div><!-- /codeZone -->
 
 
-		<div class="item2 mark">
-			<p lang="ru">В момент написания статьи, я использовал браузер <samp class="pur dib">Opera v.57</samp>, и в нем свойство <samp class="sin">position</samp> со значением <samp class="lsin">sticky</samp> на элемент <samp class="red">&lt;tbody></samp> не оказывает никакого эффекта. Еще у меня был <samp class="red dib">FireFox v.43</samp> :-) но в нем не работает значение <samp class="lsin">sticky</samp>.</p>
-			<p lang="ru" class="mb0">В последних версиях декстопных браузеров, описанных в начале статьи, в данной таблице все ok. Заключительная часть статьи актуальна для более младших версий браузеров.</p>
+		<div lang="ru">В этот момент перед глазами ноутбука про&shy;бежала вся его жизнь :-))</div>
+		<div lang="en">At this moment, before the eyes of the laptop, his whole life ran away :-))</div>
 
-			<p lang="en">At the time of writing, I was using the <samp class="pur dib">Opera v.57</samp> browser, and in it the <samp class="sin">position</samp> property with the <samp class="lsin">sticky</samp> value on the <samp class="red">&lt;tbody></samp> element has no effect. I also had <samp class="red dib">FireFox v.43</samp> :-) but the <samp class="lsin">sticky</samp> value doesn't work in it.</p>
-			<p lang="en" class="mb0">In the latest versions of the desktop browsers, described at the beginning of the article, everything is ok in this table. The final part of the article is actual for younger versions of browsers.</p>
+
+		<div class="codeZone codeZone__mark">
+			<p lang="ru">В момент написания статьи, я ис&shy;пользо&shy;вал браузер <samp class="pur">Opera v.57</samp>, и в нем свой&shy;ство <samp class="sin">position</samp> со зна&shy;че&shy;нием <samp class="lsin">sticky</samp> на эле&shy;мент <samp class="red">&lt;tbody></samp> не ока&shy;зывает ника&shy;кого эффекта. Еще у меня был <samp class="red">FireFox v.43</samp> :-) но в нем не рабо&shy;тает зна&shy;чение <samp class="lsin">sticky</samp>.</p>
+			<p lang="ru">В последних версиях декстопных брау&shy;зеров, опи&shy;сан&shy;ных в начале статьи, в дан&shy;ной таб&shy;лице все ok. За&shy;ключи&shy;тельная часть статьи акту&shy;альна для более мла&shy;дших версий брау&shy;зеров.</p>
+
+			<p lang="en">At the time of writing, I was using the <samp class="pur">Opera v.57</samp> browser, and in it the <samp class="sin">position</samp> property with the <samp class="lsin">sticky</samp> value on the <samp class="red">&lt;tbody></samp> element has no effect. I also had <samp class="red">FireFox v.43</samp> :-) but the <samp class="lsin">sticky</samp> value doesn't work in it.</p>
+			<p lang="en">In the latest versions of the desktop browsers, described at the beginning of the article, everything is ok in this table. The final part of the article is actual for younger versions of browsers.</p>
 		</div>
+		<hr class="hr">
 	</section><!-- /scroll table 1.5 -->
 
 
 
 	<!-- scroll table 1.6 -->
-	<section id="m16">
-		<p lang="ru" class="mb3">Перестроим оформление нашей таблицы на сонове <b>v1.4</b>. Просто добавим еще один селектор для второй строки ячеек заголовка <samp class="red">&lt;th></samp> и зададим ему положение при помощи свойства <samp class="sin">top</samp>. А границы ячеек оформим на основе таблицы <b>v1.5</b>.</p>
-		<p lang="en" class="mb3">Let's rebuild the layout of our table based on <b>v1.4</b>. Just add another selector for the second row of header cells <samp class="red">&lt;th></samp>, and set its position using the <samp class="sin">top</samp> property. And the borders of the cells will be drawn based on the table <b>v1.5</b></p>
-
-		<p lang="ru" class="mb3">При задании значения свойства <samp class="sin">top</samp> для элемента <samp class="red">&lt;th></samp> мы должны помнить, что размеры ячеек таблицы могут измениться его содержимым.</p>
-		<p lang="en" class="mb3">When we set the value of the <samp class="sin">top</samp> property for the <samp class="red">&lt;th></samp> element, we must remember that the table cells can be resized by its contents.</p>
+	<section class="main__section" id="m16">
+		<p lang="ru">Перестроим оформление нашей таб&shy;лицы на оcно&shy;ве <b>v1.4</b>. Просто доба&shy;вим еще один селек&shy;тор для второй строки ячеек заго&shy;ловка <samp class="red">&lt;th></samp> и за&shy;да&shy;дим ему поло&shy;жение при помощи свой&shy;ства <samp class="sin">top</samp>. А гра&shy;ницы ячеек офор&shy;мим на основе таб&shy;лицы <b>v1.5</b>.</p>
+		<p lang="en">Let's rebuild the layout of our table based on <b>v1.4</b>. Just add another selector for the second row of header cells <samp class="red">&lt;th></samp>, and set its position using the <samp class="sin">top</samp> property. And the borders of the cells will be drawn based on the table <b>v1.5</b></p>
 
 
-		<div class="caption pur">scroll table v_1.6</div>
-		<div class="box-table-scroll"><table name="table_2_body" class="tt-0 tt-5 tt-6"></table></div>
-		<div class="item2">
-			<samp class="point" onclick='tt6_code.classList.toggle("hiden");' title="open/close">code:</samp>
-			<div class="hiden t_hiden" id="tt6_code" onclick="event.stopPropagation()">
-				<pre><code>&lt;div class="box-table-scroll"><br>  &lt;table class="tt-6"><br>    &lt;tbody><br>      &lt;!-- th zone --><br>    &lt;/tbody><br>    &lt;tbody><br>      &lt;!-- td zone --><br>    &lt;/tbody><br>  &lt;/table><br>&lt;/div><br><br>&lt;style><br>  .box-table-scroll {<br>    overflow:auto; background:#fffacd; width:100%; height:60vh<br>  }<br>  .tt-6 {<br>    border-collapse:collapse;<br>    border:solid transparent; border-width:0 .5px .5px 0<br>  }<br>  .tt-6 th, .tt-6 td {<br>    text-align:center; vertical-align:middle;<br>    box-shadow:inset -1px -1px 0 #000<br>  }<br>  .tt-6 th {<br>    height:60px; min-width:150px; background:#b0e0e6;<br>    <samp class="new_css">position:sticky; top:0; z-index:3</samp><br>  }<br>  .tt-6 tr:nth-child(1) th {<br>    box-shadow:inset -1px -1px 0 #000, inset 0 1px 0 #000<br>  }<br>  <samp class="new_css">.tt-6 tr:nth-child(2) th {top:60px}</samp><br>  .tt-6 tr:nth-child(1) th:nth-child(1) {<br>    position:sticky; left:0; z-index:4; background:#5F9EA0;<br>    box-shadow:inset -1px -1px 0 #000, inset 1px 1px 0 #000<br>  }<br>  .tt-6 td {height:100px; background:#fffacd}<br>  .tt-6 tr td:nth-child(1) {<br>    position:sticky; left:0; z-index:2; background:#f0e68c;<br>    box-shadow:inset -1px -1px 0 #000, inset 1px 0 0 #000<br>  }<br>&lt;/style></code></pre>
-			</div><!-- /hiden -->
-		</div><!-- /item2 -->
+		<div class="addPlace"></div>
+
+
+		<p lang="ru">При задании значения свойства <samp class="sin">top</samp> для эле&shy;мента <samp class="red">&lt;th></samp> мы должны пом&shy;нить, что раз&shy;меры ячеек таб&shy;лицы могут изме&shy;ниться его содер&shy;жимым.</p>
+		<p lang="en">When we set the value of the <samp class="sin">top</samp> property for the <samp class="red">&lt;th></samp> element, we must remember that the table cells can be resized by its contents.</p>
+
+
+		<div class="tableBox__caption">scroll table v_1.6</div>
+		<div class="tableBox__box-table-scroll"><table name="table_2_body" class="tt-0 tt-5 tt-6"></table></div>
+		<div class="codeZone">
+			<div class="codeZone__onclick" onclick='tt6_code.classList.toggle("codeZone__hidden");' title="open/close">code:</div>
+			<div class="codeZone__hidden codeZone__hidden_t" id="tt6_code" onclick="event.stopPropagation()">
+				<pre><code>&lt;div class="tableBox__box-table-scroll"><br>  &lt;table class="tt-6"><br>    &lt;tbody><br>      &lt;!-- th zone --><br>    &lt;/tbody><br>    &lt;tbody><br>      &lt;!-- td zone --><br>    &lt;/tbody><br>  &lt;/table><br>&lt;/div><br><br>&lt;style><br>  .tableBox__box-table-scroll {<br>    overflow:auto; background:#fffacd; width:100%; height:60vh<br>  }<br>  .tt-6 {<br>    border-collapse:collapse;<br>    border:solid transparent; border-width:0 .5px .5px 0<br>  }<br>  .tt-6 th, .tt-6 td {<br>    text-align:center; vertical-align:middle;<br>    box-shadow:inset -1px -1px 0 #000<br>  }<br>  .tt-6 th {<br>    height:60px; min-width:150px; background:#b0e0e6;<br>    <i class="codeZone__newCSS">position:sticky; top:0; z-index:3</i><br>  }<br>  .tt-6 tr:nth-child(1) th {<br>    box-shadow:inset -1px -1px 0 #000, inset 0 1px 0 #000<br>  }<br>  <i class="codeZone__newCSS">.tt-6 tr:nth-child(2) th {top:60px}</i><br>  .tt-6 tr:nth-child(1) th:nth-child(1) {<br>    position:sticky; left:0; z-index:4; background:#5F9EA0;<br>    box-shadow:inset -1px -1px 0 #000, inset 1px 1px 0 #000<br>  }<br>  .tt-6 td {height:100px; background:#fffacd}<br>  .tt-6 tr td:nth-child(1) {<br>    position:sticky; left:0; z-index:2; background:#f0e68c;<br>    box-shadow:inset -1px -1px 0 #000, inset 1px 0 0 #000<br>  }<br>&lt;/style></code></pre>
+			</div><!-- /hidden -->
+		</div><!-- /codeZone -->
+
+
+		<hr class="hr">
 	</section><!-- /scroll table 1.6 -->
 
 
 
-	<section id="end">
-		<p lang="ru" class="mb3">Наша таблица готова. Мы прошли большой путь при её создании. На нашем пути было много подводных камней, но мы успешно справились и проработали один из аспектов стилизации больших таблиц.</p>
-		<p lang="en" class="mb3">Our table is ready. We have come a long way in creating it. There were a lot of pitfalls on our way, but we successfully coped and worked out one of the aspects of styling large tables.</p>
+	<section class="main__section" id="end">
+		<p lang="ru">Наша таблица готова. Мы прошли боль&shy;шой путь при её со&shy;зда&shy;нии. На нашем пути было много под&shy;вод&shy;ных камней, но мы успеш&shy;но спра&shy;вились и прора&shy;ботали один из аспек&shy;тов стили&shy;зации больших таб&shy;лиц.</p>
+		<p lang="en">Our table is ready. We have come a long way in creating it. There were a lot of pitfalls on our way, but we successfully coped and worked out one of the aspects of styling large tables.</p>
 
-		<p lang="ru">Возможности CSS весьма обширны и продолжают развиваться, главное в них не запутаться :-)</p>
+
+		<div class="addPlace"></div>
+
+
+		<p lang="ru">Возможности CSS весьма обширны и про&shy;дол&shy;жают разви&shy;ваться, глав&shy;ное в них не запу&shy;таться :-)</p>
 		<p lang="en">CSS features are very extensive and continue to develop, the main thing is not to get confused about them :-)</p>
-		<hr>
+
+		<hr class="hr hr_last">
 	</section>
 
 </main>
@@ -355,8 +415,8 @@
 
 
 
-<!-- <aside>
-	<iframe src="aside/big-table-of-solubility_ChemiDay.com.html" id="frame"></iframe>
+<!-- <aside class="aside">
+	<iframe src="aside/big-table-of-solubility_ChemiDay.com.html" id="frame" class="aside__frame"></iframe>
 </aside> -->
 
 </body></html>
